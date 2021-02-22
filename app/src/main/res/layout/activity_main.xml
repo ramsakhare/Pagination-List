@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/swipeRefresh">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/item_users"
+        android:id="@+id/recyclerView"/>
+
+
+  </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/tv_internet"
+      android:visibility="gone"
+      android:layout_marginLeft="25dp"
+      android:gravity="center"
+      android:layout_marginRight="25dp"
+      android:textSize="25dp"
+      android:layout_marginTop="200dp"
+      android:text="No internet connection available please connect to internet and try again!"/>
+
+
+  <ProgressBar
+      android:id="@+id/main_progress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"/>
+
+</FrameLayout>

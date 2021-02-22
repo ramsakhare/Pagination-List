@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">Innofied</string>
+  <string name="no_internet">No internet connection available please connect to internet and try again!</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="7dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    app:cardElevation="3dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@android:color/white"
+      android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="05dp">
+
+      <ProgressBar
+          android:id="@+id/progress_bar_loader"
+          style="@style/Widget.AppCompat.ProgressBar"
+          android:layout_width="@dimen/activity_margin"
+          android:layout_height="@dimen/activity_margin"
+          android:layout_gravity="center"
+          android:theme="@style/CircularProgress"
+          android:visibility="gone" />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/iv_user_profile"
+          android:layout_width="80dp"
+          android:layout_height="80dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+      <TextView
+          android:id="@+id/tv_Name"
+          style="@style/TextAppearance.AppCompat.Subhead"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/activity_margin_quarter"
+          android:maxLines="1"
+          tools:text="Name" />
+
+      <TextView
+          android:id="@+id/tv_email"
+          style="@style/TextAppearance.AppCompat.Caption"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/activity_margin_half"
+          android:ellipsize="end"
+          android:maxLines="2"
+          tools:text="email@gmail.com" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
